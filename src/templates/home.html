@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <%= require('html-loader!.././partials/html-head-meta.html') %>
+    <%= require('html-loader!.././partials/html-head-css.html') %>
+    <%= require('html-loader!.././partials/html-head-js.html') %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="page-<%= htmlWebpackPlugin.options.page %>">
+        <% if (process.env.NODE_ENV != 'development') { %><%= require('html-loader!.././partials/html-analytics.html') %><% } %>
+        
+        <% if (process.env.NODE_ENV == 'development') { %>
+            <!-- <p>this is dev mode</p> -->
+        <% } %>
+        <% if (process.env.NODE_ENV != 'development') { %>
+            <!-- <p>this is PROD mode</p> -->
+        <% } %>
+        
+        <%= require('html-loader!.././partials/nav.html') %>
+
+        <main role="main" class="">
+
+
+                <%= require('html-loader!.././pages/'+htmlWebpackPlugin.options.page+'.html') %>
+                
+                      
+        </main><!-- /.container -->
+
+    <%= require('html-loader!.././partials/html-footer-js.html') %>
+   
+</body>
+</html>

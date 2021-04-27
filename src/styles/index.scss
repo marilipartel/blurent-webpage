@@ -1,0 +1,13 @@
+$body-color: blue;
+
+body {
+  color: #333;
+}  
+
+body > .container {
+  margin-top: 100px;
+}
+
+.jumbotron {
+  background-color: #fff;
+}
