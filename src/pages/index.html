@@ -1,20 +1,115 @@
-
-<section class="jumbotron text-center">
-        <div class="container">
-          <h1 class="jumbotron-heading">Home Template</h1>
-          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-          <p>
-            <a href="about" class="btn btn-primary my-2">About</a>
-            <a href="featured" class="btn btn-secondary my-2">Featured</a>
-          </p>
+<section class="contact">
+    <div class="container d-flex justify-content-end">
+        <div class="contact__email">
+            <img class="contact__email--icon" src="/assets/images/envelope.svg">
+            <span class="contact__text">rent@blurent.ee</span>
         </div>
-      </section>
+        <div class="contact__phone">
+            <img class="contact__phone--icon" src="/assets/images/phone.svg" alt="">
+            <span class="contact__text">+372 51989361</span>
+        </div>
+    </div>
+</section>
 
-      <div class="album py-5 bg-light">
-            <div class="container">
-                    <p>This is pages/index.html</p>
-            </div>
+<nav class="navbar navbar-expand-md navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/images/blurent logo.svg" alt="" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarsExampleDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">ESILEHT</a>
+              <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">TOOTED</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BLOGI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">KONTAKT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ETTEVÕTTEST</a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
+  
 
+<section class="hero d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="hero__content d-flex flex-column justify-content-center align-items-center">
+          <h1 class="hero__title text-center">
+            REGISTREERU JA
+            <span class="bold">VÕIDA</span>
+            KINKEKAART VÄÄRTUSES
+            <span class="bold">100€</span>
+          </h1>
+          <button class="btn hero__btn">REGISTREERU</button>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <img class="hero__img img-fluid" src="/assets/images/hero-img.svg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
 
-      <div id="root"></div>
+<section class="products text-center">
+    <div class="container">
+        <h2 class="products__title">Puhastusseadmed</h2>
+        <h2 class="products__title">Haagissaunad</h2>
+    </div>
+</section>
+
+<section class="cta text-center d-flex justify-content-center align-items-center">
+    <div class="cta__content">
+      <div class="cta__textbox text-left">
+        <h2 class="cta__title">Liitu uudiskirjaga</h2>
+        <p class="cta__text">Parimad pakkumised otse postkasti.</p>
+      </div>
+      <form action="#" class="cta__form"> 
+          <label class="cta__label" for="email"></label>
+          <input class="cta__input" type="email" id="email" name="email" placeholder="Sisesta e-posti aadress">
+          <button class="cta__btn">LIITU</button>      
+      </form>
+    </div>
+</section>
+
+<section class="footer d-flex align-items-center">
+    <div class="container">
+        <div class="footer__contacts d-flex justify-content-between align-items-center">
+            <div class="footer__logo">
+                <img src="/assets/images/blurent logo.svg" alt="">
+            </div>
+            <div class="footer__contacts">
+                <span class="footer__text bold">rendi@blurent.ee</span>
+                <span class="footer__text bold">+372 51989361</span>
+                <span class="footer__text bold">Tapa, Jaama 1</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="copyright text-center d-flex align-items-center justify-content-center">
+  <span class="copyright__text"><p>Kõik õigused kaitstud 2021</p></span>
+</section>

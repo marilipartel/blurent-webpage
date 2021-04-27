@@ -1,0 +1,25 @@
+.btn {
+  border: 1px solid $almostblack;
+  color: $almostblack;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 16px 70px;
+}
+
+.cta {
+  &__btn {
+    background-color: $beige;
+    width: 24%;
+    padding: 13px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $darkgrey;
+    border: none;
+    border-radius: 0 7px 7px 0;
+    margin: 0;
+  }
+}

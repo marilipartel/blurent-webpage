@@ -1,0 +1,55 @@
+.contact {
+  padding-top: 16px;
+  &__phone {
+    margin-left: 24px;
+  }
+}
+
+.nav-link {
+  padding-right: 0 !important;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 75% !important;
+}
+
+.hero {
+  &__content {
+    height: 400px;
+  }
+  &__title {
+    margin-bottom: 55px;
+  }
+}
+
+.cta {
+  height: 536px;
+  &__content {
+    width: 28%;
+  }
+  &__form {
+    width: 100%;
+  }
+  &__input {
+    width: 75%;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__text {
+    margin-bottom: 58px;
+  }
+}
+
+.footer {
+  height: 216px;
+  &__text {
+    margin-left: 30px;
+  }
+}
+
+.copyright {
+  height: 104px;
+}

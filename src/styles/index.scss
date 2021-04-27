@@ -1,13 +1,15 @@
-$body-color: blue;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1024px,
+  xxl: 1352px,
+);
 
-body {
-  color: #333;
-}  
-
-body > .container {
-  margin-top: 100px;
-}
-
-.jumbotron {
-  background-color: #fff;
-}
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "/src/styles/base/colors.scss";
+@import "/src/styles/base/typography.scss";
+@import "/src/styles/base/backgrounds.scss";
+@import "/src/styles/layout/desktop.scss";
+@import "/src/styles/components/buttons.scss";
+@import "/src/styles/components/forms.scss";
