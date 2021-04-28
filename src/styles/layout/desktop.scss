@@ -17,10 +17,25 @@
 
 .hero {
   &__content {
-    height: 400px;
+    height: 632px;
   }
   &__title {
     margin-bottom: 55px;
+  }
+  &__imgbox {
+    height: 632px;
+  }
+}
+
+.products {
+  &__title {
+    margin: 101px 0 71px 0;
+  }
+  &__cardtitle {
+    margin: 13px 0 12px 0;
+  }
+  &__cardtext {
+    margin-bottom: 29px;
   }
 }
 
@@ -52,4 +67,8 @@
 
 .copyright {
   height: 104px;
+}
+
+.copyright p {
+  margin: 0;
 }

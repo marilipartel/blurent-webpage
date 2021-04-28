@@ -11,7 +11,7 @@
     </div>
 </section>
 
-<nav class="navbar navbar-expand-md navbar-light">
+<nav class="navbar navbar-expand-md navbar-light sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="/assets/images/blurent logo.svg" alt="" />
@@ -64,11 +64,13 @@
             KINKEKAART VÄÄRTUSES
             <span class="bold">100€</span>
           </h1>
-          <button class="btn hero__btn">REGISTREERU</button>
+          <button class="bttn hero__btn">REGISTREERU</button>
         </div>
       </div>
       <div class="col-lg-7">
-        <img class="hero__img img-fluid" src="/assets/images/hero-img.svg" alt="">
+        <div class="hero__imgbox d-flex align-items-end">
+          <img class="hero__img img-fluid" src="/assets/images/hero-img.svg" alt="">
+      </div>
       </div>
     </div>
   </div>
@@ -76,8 +78,220 @@
 
 <section class="products text-center">
     <div class="container">
+      <div class="products__clean">
         <h2 class="products__title">Puhastusseadmed</h2>
+        <div class="carousel">
+          <div class="slider">
+            <div class="products__card d-flex flex-column justify-content-between">
+              <div class="products__pricetag">
+                <p class="products__price products__price--after bold">24H 8€</p>
+                <p class="products__price products__price--before bold line-through">24H 10€</p>
+              </div>
+              <div class="products__imgbox">
+                <img class="img-fluid" src="/assets/images/aurupesur.png" alt="">
+              </div>
+              <div class="products__cardtitle">
+                <h3>Kärcher aurupesur</h3>
+              </div>
+              <div class="products__cardtext">
+                <p>Puhasta lihtsalt ja kiirelt raskesti ligipääsetavad kohad.</p>
+              </div>
+              <button class="bttn products__btn">VAATA LÄHEMALT</button>
+            </div>
+            <div class="products__card d-flex flex-column justify-content-between">
+              <div class="products__pricetag">
+                <p class="products__price bold">24H 14€</p>
+              </div>
+              <div class="products__imgbox">
+                <img class="img-fluid" src="/assets/images/tekstiilipesur.png" alt="">
+              </div>
+              <div class="products__cardtitle">
+                <h3>Kärcher tekstiilipesur</h3>
+              </div>
+              <div class="products__cardtext">
+                <p>Puhasta ise diivanid, autoistmed, vaibad ja madratsid.</p>
+              </div>
+              <button class="bttn products__btn">VAATA LÄHEMALT</button>
+            </div>
+            <div class="products__card d-flex flex-column justify-content-between">
+              <div class="products__pricetag">
+                <p class="products__price bold">24H 10€</p>
+              </div>
+              <div class="products__imgbox">
+                <img class="img-fluid" src="/assets/images/survepesur.png" alt="">
+              </div>
+              <div class="products__cardtitle">
+                <h3>Kärcher survepesur</h3>
+              </div>
+              <div class="products__cardtext">
+                <p>Puhasta ise auto, maja fassaad, vundament, terrass, aed…</p>
+              </div>
+              <button class="bttn products__btn">VAATA LÄHEMALT</button>
+            </div>
+            <div class="products__card d-flex flex-column justify-content-between">
+              <div class="products__pricetag">
+                <p class="products__price products__price--after bold">24H 8€</p>
+                <p class="products__price products__price--before bold line-through">24H 10€</p>
+              </div>
+              <div class="products__imgbox">
+                <img class="img-fluid" src="/assets/images/aurupesur.png" alt="">
+              </div>
+              <div class="products__cardtitle">
+                <h3>Kärcher aurupesur</h3>
+              </div>
+              <div class="products__cardtext">
+                <p>Puhasta lihtsalt ja kiirelt raskesti ligipääsetavad kohad.</p>
+              </div>
+              <button class="bttn products__btn">VAATA LÄHEMALT</button>
+            </div>
+            <div class="products__card d-flex flex-column justify-content-between">
+              <div class="products__pricetag">
+                <p class="products__price bold">24H 14€</p>
+              </div>
+              <div class="products__imgbox">
+                <img class="img-fluid" src="/assets/images/tekstiilipesur.png" alt="">
+              </div>
+              <div class="products__cardtitle">
+                <h3>Kärcher tekstiilipesur</h3>
+              </div>
+              <div class="products__cardtext">
+                <p>Puhasta ise diivanid, autoistmed, vaibad ja madratsid.</p>
+              </div>
+              <button class="bttn products__btn">VAATA LÄHEMALT</button>
+            </div>
+            <div class="products__card d-flex flex-column justify-content-between">
+              <div class="products__pricetag">
+                <p class="products__price bold">24H 10€</p>
+              </div>
+              <div class="products__imgbox">
+                <img class="img-fluid" src="/assets/images/survepesur.png" alt="">
+              </div>
+              <div class="products__cardtitle">
+                <h3>Kärcher survepesur</h3>
+              </div>
+              <div class="products__cardtext">
+                <p>Puhasta ise auto, maja fassaad, vundament, terrass, aed…</p>
+              </div>
+              <button class="bttn products__btn">VAATA LÄHEMALT</button>
+            </div>
+          </div>
+          <div class="controls">
+            <span class="arrow left">
+              <img src="/assets/images/previous.svg" alt="" />
+            </span>
+            <span class="arrow right">
+              <img src="/assets/images/next.svg" alt="" />
+            </span>
+          </div>
+        </div>      
+      </div>
+      <!-- <div class="products__trailer">
         <h2 class="products__title">Haagissaunad</h2>
+        <div class="carousel--t">
+          <div class="slider--t">
+            <div class="products__card--t d-flex flex-column justify-content-between">
+              <div class="products__pricetag">
+                <p class="products__price products__price--after bold">24H 8€</p>
+                <p class="products__price products__price--before bold line-through">24H 10€</p>
+              </div>
+              <div class="products__imgbox">
+                <img class="img-fluid" src="/assets/images/aurupesur.png" alt="">
+              </div>
+              <div class="products__cardtitle">
+                <h3>Kärcher aurupesur</h3>
+              </div>
+              <div class="products__cardtext">
+                <p>Puhasta lihtsalt ja kiirelt raskesti ligipääsetavad kohad.</p>
+              </div>
+              <button class="bttn products__btn">VAATA LÄHEMALT</button>
+            </div>
+            <div class="products__card--t d-flex flex-column justify-content-between">
+              <div class="products__pricetag">
+                <p class="products__price bold">24H 14€</p>
+              </div>
+              <div class="products__imgbox">
+                <img class="img-fluid" src="/assets/images/tekstiilipesur.png" alt="">
+              </div>
+              <div class="products__cardtitle">
+                <h3>Kärcher tekstiilipesur</h3>
+              </div>
+              <div class="products__cardtext">
+                <p>Puhasta ise diivanid, autoistmed, vaibad ja madratsid.</p>
+              </div>
+              <button class="bttn products__btn">VAATA LÄHEMALT</button>
+            </div>
+            <div class="products__card--t d-flex flex-column justify-content-between">
+              <div class="products__pricetag">
+                <p class="products__price bold">24H 10€</p>
+              </div>
+              <div class="products__imgbox">
+                <img class="img-fluid" src="/assets/images/aurupesur.png" alt="">
+              </div>
+              <div class="products__cardtitle">
+                <h3>Kärcher survepesur</h3>
+              </div>
+              <div class="products__cardtext">
+                <p>Puhasta ise auto, maja fassaad, vundament, terrass, aed…</p>
+              </div>
+              <button class="bttn products__btn">VAATA LÄHEMALT</button>
+            </div>
+            <div class="products__card--t d-flex flex-column justify-content-between">
+              <div class="products__pricetag">
+                <p class="products__price products__price--after bold">24H 8€</p>
+                <p class="products__price products__price--before bold line-through">24H 10€</p>
+              </div>
+              <div class="products__imgbox">
+                <img class="img-fluid" src="/assets/images/aurupesur.png" alt="">
+              </div>
+              <div class="products__cardtitle">
+                <h3>Kärcher aurupesur</h3>
+              </div>
+              <div class="products__cardtext">
+                <p>Puhasta lihtsalt ja kiirelt raskesti ligipääsetavad kohad.</p>
+              </div>
+              <button class="bttn products__btn">VAATA LÄHEMALT</button>
+            </div>
+            <div class="products__card--t d-flex flex-column justify-content-between">
+              <div class="products__pricetag">
+                <p class="products__price bold">24H 14€</p>
+              </div>
+              <div class="products__imgbox">
+                <img class="img-fluid" src="/assets/images/tekstiilipesur.png" alt="">
+              </div>
+              <div class="products__cardtitle">
+                <h3>Kärcher tekstiilipesur</h3>
+              </div>
+              <div class="products__cardtext">
+                <p>Puhasta ise diivanid, autoistmed, vaibad ja madratsid.</p>
+              </div>
+              <button class="bttn products__btn">VAATA LÄHEMALT</button>
+            </div>
+            <div class="products__card--t d-flex flex-column justify-content-between">
+              <div class="products__pricetag">
+                <p class="products__price bold">24H 10€</p>
+              </div>
+              <div class="products__imgbox">
+                <img class="img-fluid" src="/assets/images/aurupesur.png" alt="">
+              </div>
+              <div class="products__cardtitle">
+                <h3>Kärcher survepesur</h3>
+              </div>
+              <div class="products__cardtext">
+                <p>Puhasta ise auto, maja fassaad, vundament, terrass, aed…</p>
+              </div>
+              <button class="bttn products__btn">VAATA LÄHEMALT</button>
+            </div>
+          </div>
+          <div class="controls--t">
+            <span class="arrow--t left--t">
+              <img src="/assets/images/previous.svg" alt="" />
+            </span>
+            <span class="arrow--t right--t">
+              <img src="/assets/images/next.svg" alt="" />
+            </span>
+          </div>
+        </div>
+      </div> -->
     </div>
 </section>
 
@@ -89,8 +303,7 @@
       </div>
       <form action="#" class="cta__form"> 
           <label class="cta__label" for="email"></label>
-          <input class="cta__input" type="email" id="email" name="email" placeholder="Sisesta e-posti aadress">
-          <button class="cta__btn">LIITU</button>      
+          <input class="cta__input" type="email" id="email" name="email" placeholder="Sisesta e-posti aadress"><button class="cta__btn">LIITU</button>      
       </form>
     </div>
 </section>

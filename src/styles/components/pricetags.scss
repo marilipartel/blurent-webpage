@@ -1,0 +1,23 @@
+.products {
+  &__pricetag {
+    position: absolute;
+  }
+  &__price {
+    background-color: $blue;
+    color: $white;
+    width: 96px;
+    height: 32px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    &--after {
+      background-color: $green;
+    }
+    &--before {
+      background-color: $white;
+      color: $darkgrey;
+    }
+  }
+}

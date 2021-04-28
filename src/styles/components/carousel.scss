@@ -1,0 +1,42 @@
+.carousel,
+.carousel--t {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.slider,
+.slider--t {
+  display: flex;
+  transition: all 0.3s;
+}
+
+.products {
+  &__card {
+    margin: 0 50px;
+    width: 336px;
+    &--t {
+      margin: 0 50px;
+      width: 336px;
+    }
+  }
+}
+
+.controls .arrow,
+.controls--t .arrow--t {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.arrow.left,
+.arrow--t.left--t {
+  left: 1%;
+}
+
+.arrow.right,
+.arrow--t.right--t {
+  right: 1%;
+}

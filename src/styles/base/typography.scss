@@ -2,6 +2,10 @@
   font-weight: 700;
 }
 
+.line-through {
+  text-decoration: line-through;
+}
+
 p,
 .footer__text {
   font-family: "Roboto", sans-serif;
@@ -20,8 +24,15 @@ h2 {
   font-weight: 700;
 }
 
+h3 {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+}
+
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Montserrat", sans-serif;
   color: $almostblack;
 }
