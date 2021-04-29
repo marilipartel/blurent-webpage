@@ -1,5 +1,6 @@
 .carousel,
-.carousel--t {
+.carousel--t,
+.carousel--img {
   position: relative;
   overflow: hidden;
   margin: 0;
@@ -8,7 +9,8 @@
 }
 
 .slider,
-.slider--t {
+.slider--t,
+.slider--img {
   display: flex;
   transition: all 0.3s;
 }
@@ -25,6 +27,12 @@
   width: 336px;
 }
 
+.imgC {
+  width: 696px;
+  height: 600px;
+  margin: 30px;
+}
+
 .controls .arrow {
   position: absolute;
   top: 50%;
@@ -32,11 +40,24 @@
 }
 
 .arrow.left,
-.arrow.left--t {
+.arrow.left--t,
+.arrow.left--img {
   left: 1%;
 }
 
 .arrow.right,
-.arrow.right--t {
+.arrow.right--t,
+.arrow.right--img {
   right: 1%;
+}
+
+.thumbnail {
+  width: 120px;
+  height: 120px;
+  border: 1px solid $darkgrey;
+  border-radius: 3px;
+}
+
+.thumbnail--active {
+  border: 3px solid $green;
 }

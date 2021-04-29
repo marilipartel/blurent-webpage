@@ -1,0 +1,14 @@
+<svg id="Component_19_1" data-name="Component 19 – 1" xmlns="http://www.w3.org/2000/svg" width="720" height="405" viewBox="0 0 720 405">
+  <g id="Rectangle_193" data-name="Rectangle 193" fill="#fff" stroke="#707070" stroke-width="1">
+    <rect width="720" height="405" stroke="none"/>
+    <rect x="0.5" y="0.5" width="719" height="404" fill="none"/>
+  </g>
+  <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(304 143)" fill="#fff" stroke="#707070" stroke-width="9">
+    <circle cx="60" cy="60" r="60" stroke="none"/>
+    <circle cx="60" cy="60" r="55.5" fill="none"/>
+  </g>
+  <g id="Polygon_1" data-name="Polygon 1" transform="translate(396 175) rotate(90)" fill="#fff">
+    <path d="M 48.16533660888672 43.5 L 7.834662914276123 43.5 L 28 8.930850982666016 L 48.16533660888672 43.5 Z" stroke="none"/>
+    <path d="M 28 17.86171913146973 L 15.66933441162109 39 L 40.33066558837891 39 L 28 17.86171913146973 M 28 0 L 56 48 L 0 48 L 28 0 Z" stroke="none" fill="#707070"/>
+  </g>
+</svg>

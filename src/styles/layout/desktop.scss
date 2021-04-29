@@ -75,3 +75,33 @@
 .copyright p {
   margin: 0;
 }
+
+// Product page
+
+.main {
+  margin-top: 96px;
+  &__imgcarousel {
+    height: 752px;
+  }
+  &__content p {
+    margin-top: 28px;
+  }
+}
+
+.product {
+  &__nav {
+    margin: 77px 0 38px 0;
+  }
+  &__navitem {
+    display: inline-block;
+    margin-right: 36px;
+    cursor: pointer;
+    &--nonactive {
+      color: $darkgrey;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
