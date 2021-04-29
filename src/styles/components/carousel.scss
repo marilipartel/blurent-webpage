@@ -17,26 +17,26 @@
   &__card {
     margin: 0 50px;
     width: 336px;
-    &--t {
-      margin: 0 50px;
-      width: 336px;
-    }
   }
 }
 
-.controls .arrow,
-.controls--t .arrow--t {
+.products__card--t {
+  margin: 0 50px;
+  width: 336px;
+}
+
+.controls .arrow {
   position: absolute;
   top: 50%;
   cursor: pointer;
 }
 
 .arrow.left,
-.arrow--t.left--t {
+.arrow.left--t {
   left: 1%;
 }
 
 .arrow.right,
-.arrow--t.right--t {
+.arrow.right--t {
   right: 1%;
 }
