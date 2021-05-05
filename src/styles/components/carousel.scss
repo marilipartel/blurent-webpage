@@ -1,30 +1,20 @@
-.carousel,
-.carousel--t,
-.carousel--img {
+.slider {
+  height: 536px;
+  max-width: 82%;
+  margin: 0 auto;
+  display: flex;
   position: relative;
   overflow: hidden;
-  margin: 0;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.slider,
-.slider--t,
-.slider--img {
-  display: flex;
-  transition: all 0.3s;
 }
 
 .products {
   &__card {
-    margin: 0 50px;
-    width: 336px;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    width: 34%;
+    transition: transform 1s;
   }
-}
-
-.products__card--t {
-  margin: 0 50px;
-  width: 336px;
 }
 
 .imgC {
@@ -37,18 +27,19 @@
   position: absolute;
   top: 50%;
   cursor: pointer;
+  z-index: 10;
 }
 
 .arrow.left,
-.arrow.left--t,
 .arrow.left--img {
-  left: 1%;
+  left: 6%;
+  transform: translate(-50%, -50%);
 }
 
 .arrow.right,
-.arrow.right--t,
 .arrow.right--img {
-  right: 1%;
+  right: 6%;
+  transform: translate(50%, -50%);
 }
 
 .thumbnail {

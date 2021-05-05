@@ -15,6 +15,10 @@
   width: 75% !important;
 }
 
+.sticky-top {
+  opacity: 0.75;
+}
+
 .hero {
   &__content {
     height: 632px;
@@ -25,6 +29,15 @@
   &__imgbox {
     height: 632px;
   }
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 .products {
@@ -96,8 +109,15 @@
     display: inline-block;
     margin-right: 36px;
     cursor: pointer;
-    &--nonactive {
-      color: $darkgrey;
+    color: $darkgrey;
+    &--active {
+      color: $black;
+    }
+  }
+  &__content {
+    display: none;
+    &--active {
+      display: block;
     }
   }
 }

@@ -3,83 +3,87 @@
 import "../styles/index.scss";
 import "../styles/carousel.scss";
 
-////////////////////////////////////////MAIN PAGE CAROUSELS//////////////////////////////////////////////////////
+////////////////////////////////////////STICKY NAVBAR////////////////////////////////////////////////////////////
+const navbar = document.querySelector(".navbar");
+const hero = document.querySelector(".hero");
+const navHeight = navbar.getBoundingClientRect().height;
 
-//Products carousel elements
-const carouselP = document.querySelector(".carousel");
-const sliderP = document.querySelector(".slider");
-const leftArrowP = document.querySelector(".left");
-const rightArrowP = document.querySelector(".right");
-const noOfCardsP = document.querySelectorAll(".products__card").length;
-let directionP;
-
-//Trailer carousel elements
-const carouselT = document.querySelector(".carousel--t");
-const sliderT = document.querySelector(".slider--t");
-const leftArrowT = document.querySelector(".left--t");
-const rightArrowT = document.querySelector(".right--t");
-const noOfCardsT = document.querySelectorAll(".products__card--t").length;
-let directionT;
-
-//Infinite carousel function
-
-/*
-const infiniteCarousel = function (
-  carousel,
-  slider,
-  leftArrow,
-  rightArrow,
-  noOfCards,
-  direction
-) {
-  slider.style.width = `${noOfCards * 436}px`;
-
-  leftArrow.addEventListener("click", function () {
-    direction = 1;
-    carousel.style.justifyContent = "flex-end";
-    slider.style.transform = `translate(${100 / noOfCards}%)`;
-  });
-
-  slider.addEventListener("transitionend", function () {
-    if (direction === -1) {
-      slider.appendChild(slider.firstElementChild);
-    } else if (direction === 1) {
-      slider.prepend(slider.lastElementChild);
-    }
-    slider.style.transition = "none";
-    slider.style.transform = "translate(0)";
-    setTimeout(function () {
-      slider.style.transition = "all 0.3s";
-    });
-  });
-
-  rightArrow.addEventListener("click", function () {
-    direction = -1;
-    carousel.style.justifyContent = "flex-start";
-    slider.style.transform = `translate(${-100 / noOfCards}%)`;
-  });
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) navbar.classList.add("sticky-top");
+  else navbar.classList.remove("sticky-top");
 };
 
-//Calling carousel function
+const heroObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
+});
 
-infiniteCarousel(
-  carouselP,
-  sliderP,
-  leftArrowP,
-  rightArrowP,
-  noOfCardsP,
-  directionP
-);
+heroObserver.observe(hero);
 
-infiniteCarousel(
-  carouselT,
-  sliderT,
-  leftArrowT,
-  rightArrowT,
-  noOfCardsT,
-  directionT
-);
-*/
+////////////////////////////////////////REVEALING SECTIONS///////////////////////////////////////////////////////
+
+const allSections = document.querySelectorAll(".section");
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("section--hidden");
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
+});
+
+////////////////////////////////////////MAIN PAGE CAROUSELS//////////////////////////////////////////////////////
+
+const cards = document.querySelectorAll(".products__card");
+const btnLeft = document.querySelector(".left");
+const btnRight = document.querySelector(".right");
+
+let curCard = 0;
+let maxCard = cards.length;
+
+const goToCard = function (card) {
+  cards.forEach(
+    (c, i) => (c.style.transform = `translateX(${100 * (i - card)}%)`)
+  );
+};
+
+goToCard(0);
+
+const nextCard = function () {
+  if (curCard === maxCard - 3) {
+    curCard = 0;
+  } else {
+    curCard++;
+  }
+  goToCard(curCard);
+};
+
+const prevCard = function () {
+  if (curCard === 0) {
+    curCard = maxCard - 3;
+  } else {
+    curCard--;
+  }
+  goToCard(curCard);
+};
+
+btnRight.addEventListener("click", nextCard);
+btnLeft.addEventListener("click", prevCard);
+document.addEventListener("keydown", function (e) {
+  if (e.key === "ArrowLeft") prevCard();
+  else if (e.key === "ArrowRight") nextCard();
+});
 
 /////////////////////////////////////////IMG CAROUSEL////////////////////////////////////////////////////////
 
@@ -124,47 +128,20 @@ imgCarousel();
 
 ////////////////////////////////////////////////PRODUCT NAV////////////////////////////////////////////////////
 
-const descriptionBtn = document.getElementById("descriptionBtn");
-const useBtn = document.getElementById("useBtn");
-const videoBtn = document.getElementById("videoBtn");
-const description = document.querySelector(".product__description");
-const use = document.querySelector(".product__use");
-const video = document.querySelector(".product__video");
+const navItems = document.querySelectorAll(".product__navitem");
+const nav = document.querySelector(".product__nav");
+const contents = document.querySelectorAll(".product__content");
 
-//Functions
-
-const descriptionActive = function () {
-  descriptionBtn.classList.remove("product__navitem--nonactive");
-  useBtn.classList.add("product__navitem--nonactive");
-  videoBtn.classList.add("product__navitem--nonactive");
-  description.classList.remove("hidden");
-  use.classList.add("hidden");
-  video.classList.add("hidden");
-};
-
-const useActive = function () {
-  descriptionBtn.classList.add("product__navitem--nonactive");
-  useBtn.classList.remove("product__navitem--nonactive");
-  videoBtn.classList.add("product__navitem--nonactive");
-  description.classList.add("hidden");
-  use.classList.remove("hidden");
-  video.classList.add("hidden");
-};
-
-const videoActive = function () {
-  descriptionBtn.classList.add("product__navitem--nonactive");
-  useBtn.classList.add("product__navitem--nonactive");
-  videoBtn.classList.remove("product__navitem--nonactive");
-  description.classList.add("hidden");
-  use.classList.add("hidden");
-  video.classList.remove("hidden");
-};
-
-//Event listeners
-
-descriptionBtn.addEventListener("click", descriptionActive);
-useBtn.addEventListener("click", useActive);
-videoBtn.addEventListener("click", videoActive);
+nav.addEventListener("click", function (e) {
+  const clicked = e.target.closest(".product__navitem");
+  if (!clicked) return;
+  navItems.forEach((i) => i.classList.remove("product__navitem--active"));
+  contents.forEach((c) => c.classList.remove("product__content--active"));
+  clicked.classList.add("product__navitem--active");
+  document
+    .querySelector(`.product__content--${clicked.dataset.tab}`)
+    .classList.add("product__content--active");
+});
 
 //////////////////////////////////////////CALENDAR//////////////////////////////////////////////////////
 
