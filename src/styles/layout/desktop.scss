@@ -7,12 +7,12 @@
 
 .nav-link {
   padding-right: 0 !important;
+  padding-left: 30px !important;
 }
 
 .navbar-nav {
   display: flex;
   justify-content: space-between;
-  width: 75% !important;
 }
 
 .sticky-top {
@@ -31,27 +31,9 @@
   }
 }
 
-.section {
-  transition: transform 1s, opacity 1s;
-}
-
-.section--hidden {
-  opacity: 0;
-  transform: translateY(8rem);
-}
-
 .products {
   &__title {
-    margin: 101px 0 71px 0;
-  }
-  &__cardtitle {
-    margin: 13px 0 12px 0;
-  }
-  &__cardtext {
-    margin-bottom: 29px;
-  }
-  &__trailer {
-    margin-bottom: 192px;
+    margin-top: 101px;
   }
 }
 
@@ -101,27 +83,6 @@
   }
 }
 
-.product {
-  &__nav {
-    margin: 77px 0 38px 0;
-  }
-  &__navitem {
-    display: inline-block;
-    margin-right: 36px;
-    cursor: pointer;
-    color: $darkgrey;
-    &--active {
-      color: $black;
-    }
-  }
-  &__content {
-    display: none;
-    &--active {
-      display: block;
-    }
-  }
-}
-
 .hidden {
   display: none;
 }
@@ -133,11 +94,22 @@
   &__title {
     margin: 77px 0 71px 0;
   }
+  &__card {
+    width: 38%;
+    height: 416px;
+  }
+  &__textbox {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
   &__plus {
     margin: 0 88px;
   }
   &__footer {
     width: 100%;
+    margin-top: 45px;
     margin-bottom: 92px;
     & h3 {
       margin-right: 26px;

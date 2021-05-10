@@ -10,5 +10,6 @@
     <% if (process.env.NODE_ENV != 'development') { %><%=
     require('html-loader!.././partials/html-analytics.html') %><% } %> <%=
     require('html-loader!.././pages/'+htmlWebpackPlugin.options.page+'.html') %>
+    <%= require('html-loader!.././partials/html-footer-js.html') %>
   </body>
 </html>

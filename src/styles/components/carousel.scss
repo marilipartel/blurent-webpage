@@ -1,55 +1,99 @@
-.slider {
-  height: 536px;
-  max-width: 82%;
-  margin: 0 auto;
-  display: flex;
-  position: relative;
-  overflow: hidden;
+.carousel {
+  &__wrapper {
+    position: relative;
+    width: 100%;
+  }
+}
+
+.owl-carousel-1,
+.owl-carousel-2 {
+  max-width: 1200px;
+  margin: auto;
+  padding: 71px 50px;
+}
+
+.owl-carousel--img {
+  max-width: 696px;
+  margin: auto;
+  padding: 71px 50px;
+}
+
+.disabled {
+  border: none !important;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 250px;
+  z-index: 10;
+  border: none;
+  background: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: $darkgrey;
+}
+
+.owl-prev {
+  left: 5%;
+}
+
+.owl-next {
+  right: 5%;
+}
+
+.gradient1,
+.gradient2 {
+  width: 80px;
+  height: 100%;
+  background: rgb(255, 255, 255);
+
+  position: absolute;
+  z-index: 5;
+}
+.gradient1 {
+  left: 5%;
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.2329306722689075) 0%,
+    rgba(255, 255, 255, 1) 35%
+  );
+}
+
+.gradient2 {
+  right: 5%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.2329306722689075) 0%,
+    rgba(255, 255, 255, 1) 35%
+  );
 }
 
 .products {
   &__card {
-    position: absolute;
-    top: 0;
+    height: 488px;
+    padding: 32px;
+  }
+  &__cardtext {
+    width: 90%;
     margin: 0 auto;
-    width: 34%;
-    transition: transform 1s;
   }
 }
 
-.imgC {
-  width: 696px;
-  height: 600px;
-  margin: 30px;
+.dots--img {
+  display: flex;
+  justify-content: space-around;
 }
 
-.controls .arrow {
-  position: absolute;
-  top: 50%;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.arrow.left,
-.arrow.left--img {
-  left: 6%;
-  transform: translate(-50%, -50%);
-}
-
-.arrow.right,
-.arrow.right--img {
-  right: 6%;
-  transform: translate(50%, -50%);
-}
-
-.thumbnail {
+.owl-dot {
   width: 120px;
   height: 120px;
+  background-image: url("/assets/images/aurupesur.svg");
+  background-size: cover;
+  border-radius: 5px;
   border: 1px solid $darkgrey;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.thumbnail--active {
-  border: 3px solid $green;
+  &.active {
+    border: 2px solid $green;
+  }
 }

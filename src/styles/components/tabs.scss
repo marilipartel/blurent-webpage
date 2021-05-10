@@ -1,0 +1,18 @@
+.ui-widget {
+  font-family: "Montserrat", sans-serif;
+}
+
+.ui-tabs {
+  border: none !important;
+  margin-top: 64px;
+  &-nav {
+    background: none;
+    border: none;
+  }
+  &-panel {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 20px !important;
+    line-height: 26px !important;
+    font-weight: 400;
+  }
+}

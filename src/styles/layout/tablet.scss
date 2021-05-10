@@ -1,0 +1,49 @@
+@media (max-width: 1000px) {
+  .hero {
+    margin-bottom: 100px;
+    height: auto;
+    &__content {
+      height: auto;
+    }
+    &__imgbox {
+      justify-content: center;
+      height: auto;
+    }
+  }
+  .owl-carousel-1,
+  .owl-carousel-2 {
+    padding: 20px 50px;
+  }
+  .products {
+    &__card {
+      height: auto;
+    }
+    &__title {
+      margin-top: 0;
+    }
+  }
+  .cta {
+    height: auto;
+    &__content {
+      width: 50%;
+    }
+    &__textbox {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .cta {
+    &__content {
+      width: 70%;
+    }
+  }
+  .footer {
+    &__contactstext {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+}

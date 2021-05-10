@@ -28,8 +28,8 @@
         <span class="navbar-toggler-icon"></span>
       </button>
   
-      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarsExampleDefault">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav w-100 justify-content-end">
           <li class="nav-item active">
             <a class="nav-link" href="/">ESILEHT</a>
               <span class="sr-only">(current)</span></a
@@ -56,29 +56,28 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-7">
-          <div class="carousel--img">
-            <div class="slider--img">
-              <img class="imgC img-fluid" src="/assets/images/aurupuhasti.svg" alt="">
-              <img class="imgC img-fluid" src="/assets/images/aurupuhasti.svg" alt="">
-              <img class="imgC img-fluid" src="/assets/images/aurupuhasti.svg" alt="">
-              <img class="imgC img-fluid" src="/assets/images/aurupuhasti.svg" alt="">
-              <img class="imgC img-fluid" src="/assets/images/aurupuhasti.svg" alt="">
+          <div class="carousel__wrapper">
+            <div class="owl-carousel owl-carousel--img">
+              <div class="imgC">
+                <img class="img-fluid" src="/assets/images/aurupesur.svg" alt="">
+              </div>
+              <div class="imgC">
+                <img class="img-fluid" src="/assets/images/aurupesur.svg" alt="">
+              </div>
+              <div class="imgC">
+                <img class="img-fluid" src="/assets/images/aurupesur.svg" alt="">
+              </div>
+              <div class="imgC">
+                <img class="img-fluid" src="/assets/images/aurupesur.svg" alt="">
+              </div>
+              <div class="imgC">
+                <img class="img-fluid" src="/assets/images/aurupesur.svg" alt="">
+              </div>              
             </div>
-            <div class="controls">
-              <span class="arrow left--img">
-                <img src="/assets/images/previous.svg" alt="" />
-              </span>
-              <span class="arrow right--img">
-                <img src="/assets/images/next.svg" alt="" />
-              </span>
+            <div class="controls--img">
+            </div>
+            <div class="dots--img">
             </div>            
-          </div>
-          <div class="thumbnails d-flex justify-content-around">
-            <img class="thumbnail thumbnail--active img-fluid" src="/assets/images/aurupuhasti.svg" alt="">
-            <img class="thumbnail img-fluid" src="/assets/images/aurupuhasti.svg" alt="">
-            <img class="thumbnail img-fluid" src="/assets/images/aurupuhasti.svg" alt="">
-            <img class="thumbnail img-fluid" src="/assets/images/aurupuhasti.svg" alt="">
-            <img class="thumbnail img-fluid" src="/assets/images/aurupuhasti.svg" alt="">
           </div>
         </div>
         <div class="col-lg-5">
@@ -88,69 +87,33 @@
               <p>Puhasta lihtsalt ja kiirelt raskesti ligipääsetavad kohad.</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat fermentum tincidunt. Nam venenatis, est dictum varius lobortis, leo nibh ultricies metus, sit amet maximus turpis risus eu elit. Praesent nec lacus turpis.</p>
               <div class="main__bttnbox d-flex justify-content-around">
-                <button class="bttn bttn__pickdate">VALI KUUPÄEV</button> 
-                <button class="bttn bttn__book disabled">BRONEERI</button>
+                <input class="bttn bttn__pickdate" type="button" id="bttn__pickdate" value="VALI KUUPÄEV">
+                <button class="bttn bttn__book bttn__disabled">BRONEERI</button>
               </div>
-              <div class="calendar__calendarbox hidden">
-                <div class="calendar d-flex flex-column align-items-center">
-                  <p>Vali kalendrist sobivad kuupäevad.</p>
-                  <div class="calendar__monthbox d-flex justify-content-between">
-                    <span class="arrow left--cal">
-                      <img src="/assets/images/previous.svg" alt="" />
-                    </span>
-                    <h3 class="calendar__mth"></h3>
-                    <span class="arrow right--cal">
-                      <img src="/assets/images/next.svg" alt="" />
-                    </span>
-                  </div>
-                  <div class="calendar__dates d-flex flex-column align-items-center">
-                    <div class="calendar__weekdays">
-                      <div class="calendar__weekday">
-                        <p class="bold">E</p>
-                      </div>
-                      <div class="calendar__weekday">
-                        <p class="bold">T</p>
-                      </div>
-                      <div class="calendar__weekday">
-                        <p class="bold">K</p>
-                      </div>
-                      <div class="calendar__weekday">
-                        <p class="bold">N</p>
-                      </div>
-                      <div class="calendar__weekday">
-                        <p class="bold">R</p>
-                      </div>
-                      <div class="calendar__weekday">
-                        <p class="bold">L</p>
-                      </div>
-                      <div class="calendar__weekday">
-                        <p class="bold">P</p>
-                      </div>
-                    </div>
-                    <div class="calendar__days">
-                    </div>
-                  </div>
-                </div> 
-              </div>
+              <div class="calendar"></div>
           </div>
         </div>
       </div>
-      <nav class="product__nav">
-        <h3 class="product__navitem product__navitem--active" data-tab="1">KIRJELDUS</h3>
-        <h3 class="product__navitem" data-tab="2">KASUTUS</h3>
-        <h3 class="product__navitem" data-tab="3">VIDEO</h3>
-      </nav>
-      <div class="product__content product__content--1 product__content--active">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat fermentum tincidunt. Nam venenatis, est dictum varius lobortis, leo nibh ultricies metus, sit amet maximus turpis risus eu elit. Praesent nec lacus turpis. Donec ac tempor nulla. Sed est lorem, lobortis ut semper vitae, vehicula in tellus. Donec id vulputate ligula. In pellentesque tempus erat, id auctor urna finibus vel. Duis vitae blandit arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed cursus molestie fringilla. Vivamus felis nibh, varius eu ante non, ultricies consectetur dolor. Nulla viverra gravida facilisis. Donec ex quam, ultrices in cursus et, accumsan eu dolor. Nullam aliquam, dui sit amet lacinia dapibus, arcu risus tempus est, vel tempor nisl neque nec dui.</p>
-      </div>
-      <div class="product__content product__content--2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat fermentum tincidunt. Nam venenatis, est dictum varius lobortis, leo nibh ultricies metus, sit amet maximus turpis risus eu elit. Praesent nec lacus turpis. Donec ac tempor nulla. Sed est lorem, lobortis ut semper vitae, vehicula in tellus. Donec id vulputate ligula. In pellentesque tempus erat, id auctor urna finibus vel. Duis vitae blandit arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed cursus molestie fringilla. Vivamus felis nibh, varius eu ante non, ultricies consectetur dolor. Nulla viverra gravida facilisis. Donec ex quam, ultrices in cursus et, accumsan eu dolor. Nullam aliquam, dui sit amet lacinia dapibus, arcu risus tempus est, vel tempor nisl neque nec dui.</p> 
-        <p>Ut aliquet ornare mi, in vestibulum turpis cursus sit amet. Pellentesque maximus orci ipsum, sed molestie velit sodales et. Nulla in mauris at nunc tristique cursus. Proin ullamcorper tempus aliquam. Morbi tempus sit amet quam a ultricies. Ut fermentum elementum tempor. Suspendisse facilisis auctor rhoncus. Nam tellus sapien, placerat ac volutpat vel, viverra in erat. Suspendisse potenti. Nullam aliquam, quam quis porta interdum, augue tortor mollis justo, id consectetur justo sem eget lacus.</p>
-        <p>Proin et felis libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas et metus nulla. Sed posuere gravida iaculis. Aenean et porttitor quam, in consequat sem. Nulla pretium blandit elit sit amet placerat. Pellentesque pharetra varius lectus luctus porta.</p>
-        <p>Suspendisse eros lectus, maximus eleifend quam non, congue sollicitudin ipsum. Integer mollis mi non orci hendrerit faucibus. Aliquam erat volutpat. Donec non urna vel nibh hendrerit tincidunt ac sed leo. Duis elementum eget ligula non accumsan. Vestibulum arcu ligula, tincidunt non luctus aliquet, maximus ut dolor. Nulla cursus commodo enim. Nam dapibus sagittis urna, at tincidunt neque sollicitudin vel. Vivamus justo felis, ornare et sollicitudin vel, ullamcorper ac ex. Proin feugiat dignissim lorem, eu congue libero tempor nec. Pellentesque ac lobortis diam. Sed pretium augue et commodo tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id est at ante dignissim laoreet in vitae tellus. Proin dapibus mi leo, in efficitur tellus vehicula pharetra. </p>
-      </div>
-      <div class="product__content product__content--3">
-        <img src="/assets/images/video-placeholder.svg" alt="">
+      <div class="tabs">
+        <ul class="product__nav">
+          <li class="product__navitem"><a href="#product__content--1">KIRJELDUS</a></li>
+          <li class="product__navitem"><a href="#product__content--2">KASUTUS</a></li>
+          <li class="product__navitem"><a href="#product__content--3">VIDEO</a></li>
+        </ul>
+        <div id="product__content--1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat fermentum tincidunt. Nam venenatis, est dictum varius lobortis, leo nibh ultricies metus, sit amet maximus turpis risus eu elit. Praesent nec lacus turpis. Donec ac tempor nulla. Sed est lorem, lobortis ut semper vitae, vehicula in tellus. Donec id vulputate ligula. In pellentesque tempus erat, id auctor urna finibus vel. Duis vitae blandit arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed cursus molestie fringilla. Vivamus felis nibh, varius eu ante non, ultricies consectetur dolor. Nulla viverra gravida facilisis. Donec ex quam, ultrices in cursus et, accumsan eu dolor. Nullam aliquam, dui sit amet lacinia dapibus, arcu risus tempus est, vel tempor nisl neque nec dui.</p>
+        </div>
+        <div id="product__content--2">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat fermentum tincidunt. Nam venenatis, est dictum varius lobortis, leo nibh ultricies metus, sit amet maximus turpis risus eu elit. Praesent nec lacus turpis. Donec ac tempor nulla. Sed est lorem, lobortis ut semper vitae, vehicula in tellus. Donec id vulputate ligula. In pellentesque tempus erat, id auctor urna finibus vel. Duis vitae blandit arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed cursus molestie fringilla. Vivamus felis nibh, varius eu ante non, ultricies consectetur dolor. Nulla viverra gravida facilisis. Donec ex quam, ultrices in cursus et, accumsan eu dolor. Nullam aliquam, dui sit amet lacinia dapibus, arcu risus tempus est, vel tempor nisl neque nec dui.</p> 
+          <p>Ut aliquet ornare mi, in vestibulum turpis cursus sit amet. Pellentesque maximus orci ipsum, sed molestie velit sodales et. Nulla in mauris at nunc tristique cursus. Proin ullamcorper tempus aliquam. Morbi tempus sit amet quam a ultricies. Ut fermentum elementum tempor. Suspendisse facilisis auctor rhoncus. Nam tellus sapien, placerat ac volutpat vel, viverra in erat. Suspendisse potenti. Nullam aliquam, quam quis porta interdum, augue tortor mollis justo, id consectetur justo sem eget lacus.</p>
+          <p>Proin et felis libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas et metus nulla. Sed posuere gravida iaculis. Aenean et porttitor quam, in consequat sem. Nulla pretium blandit elit sit amet placerat. Pellentesque pharetra varius lectus luctus porta.</p>
+          <p>Suspendisse eros lectus, maximus eleifend quam non, congue sollicitudin ipsum. Integer mollis mi non orci hendrerit faucibus. Aliquam erat volutpat. Donec non urna vel nibh hendrerit tincidunt ac sed leo. Duis elementum eget ligula non accumsan. Vestibulum arcu ligula, tincidunt non luctus aliquet, maximus ut dolor. Nulla cursus commodo enim. Nam dapibus sagittis urna, at tincidunt neque sollicitudin vel. Vivamus justo felis, ornare et sollicitudin vel, ullamcorper ac ex. Proin feugiat dignissim lorem, eu congue libero tempor nec. Pellentesque ac lobortis diam. Sed pretium augue et commodo tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id est at ante dignissim laoreet in vitae tellus. Proin dapibus mi leo, in efficitur tellus vehicula pharetra. </p>
+        </div>
+        <div id="product__content--3">
+          <video width="720px" height="405px" controls>
+            <source src=" " type=video/mp4>
+          </video>
+        </div>
       </div>
     </div>
 </section>
@@ -160,25 +123,27 @@
     <div class="discount__container d-flex flex-column align-items-center">
       <h2 class="discount__title">Koos rentides on soodsam:</h2>
       <div class="discount__content d-flex">
-        <div class="products__card d-flex flex-column justify-content-between">
+        <div class="discount__card d-flex flex-column justify-content-between">
           <div class="products__pricetag">
             <p class="products__price products__price--after bold">24H 8€</p>
             <p class="products__price products__price--before bold line-through">24H 10€</p>
           </div>
           <div class="products__imgbox">
-            <img class="img-fluid" src="/assets/images/aurupuhasti.svg" alt="">
+            <img class="img-fluid" src="/assets/images/aurupesur.svg" alt="">
           </div>
-          <div class="products__cardtitle">
-            <h3>Kärcher aurupesur</h3>
-          </div>
-          <div class="products__cardtext">
-            <p>Puhasta lihtsalt ja kiirelt raskesti ligipääsetavad kohad.</p>
+          <div class="discount__textbox">
+            <div class="discount__cardtitle">
+              <h3>Kärcher aurupesur</h3>
+            </div>
+            <div class="discount__cardtext">
+              <p>Puhasta lihtsalt ja kiirelt raskesti ligipääsetavad kohad.</p>
+            </div>
           </div>
         </div>
         <div class="discount__plus d-flex align-items-center justify-content-center">
           <img src="/assets/images/plus.svg" alt="">
         </div>
-        <div class="products__card d-flex flex-column justify-content-between">
+        <div class="discount__card d-flex flex-column justify-content-between">
           <div class="products__pricetag">
             <p class="products__price products__price--after bold">24H 12€</p>
             <p class="products__price products__price--before bold line-through">24H 14€</p>
@@ -186,11 +151,13 @@
           <div class="products__imgbox">
             <img class="img-fluid" src="/assets/images/tekstiilipesur.svg" alt="">
           </div>
-          <div class="products__cardtitle">
-            <h3>Kärcher tekstiilipesur</h3>
-          </div>
-          <div class="products__cardtext">
-            <p>Puhasta ise diivanid, autoistmed, vaibad ja madratsid.</p>
+          <div class="discount__textbox">
+            <div class="discount__cardtitle">
+              <h3>Kärcher tekstiilipesur</h3>
+            </div>
+            <div class="discount__cardtext">
+              <p>Puhasta ise diivanid, autoistmed, vaibad ja madratsid.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -221,7 +188,7 @@
             <div class="footer__logo">
                 <img src="/assets/images/blurent logo.svg" alt="">
             </div>
-            <div class="footer__contacts">
+            <div class="footer__contactstext">
                 <span class="footer__text bold">rendi@blurent.ee</span>
                 <span class="footer__text bold">+372 51989361</span>
                 <span class="footer__text bold">Tapa, Jaama 1</span>

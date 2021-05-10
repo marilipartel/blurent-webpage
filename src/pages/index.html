@@ -11,7 +11,7 @@
     </div>
 </section>
 
-<nav class="navbar navbar-expand-md navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="/assets/images/blurent logo.svg" alt="" />
@@ -20,7 +20,7 @@
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarsExampleDefault"
+        data-target="#blurentNavbar"
         aria-controls="navbarsExampleDefault"
         aria-expanded="false"
         aria-label="Toggle navigation"
@@ -28,8 +28,8 @@
         <span class="navbar-toggler-icon"></span>
       </button>
   
-      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarsExampleDefault">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="blurentNavbar">
+        <ul class="navbar-nav w-100 justify-content-end">
           <li class="nav-item active">
             <a class="nav-link" href="/">ESILEHT</a>
               <span class="sr-only">(current)</span></a
@@ -77,170 +77,21 @@
 </section>
 
 <section class="products text-center">
-    <div class="container">
-      <div class="section products__clean">
-        <h2 class="products__title">Puhastusseadmed</h2>
-        <div class="carousel">        
-          <div class="slider">
-            <div class="products__card products__card--1">
-              <div class="products__pricetag">
-                <p class="products__price products__price--after bold">24H 8€</p>
-                <p class="products__price products__price--before bold line-through">24H 10€</p>
-              </div>
-              <div class="products__imgbox">
-                <img class="img-fluid" src="/assets/images/aurupesur.png" alt="">
-              </div>
-              <div class="products__cardtitle">
-                <h3>Kärcher aurupesur</h3>
-              </div>
-              <div class="products__cardtext">
-                <p>Puhasta lihtsalt ja kiirelt raskesti ligipääsetavad kohad.</p>
-              </div>
-              <button class="bttn products__btn">VAATA LÄHEMALT</button>
+  <div class="container">
+    <div class="section products__clean">
+      <h2 class="products__title">Puhastusseadmed</h2>
+      <div class="carousel__wrapper">
+        <div class="gradient1"></div>
+        <div class="gradient2"></div>
+        <div class="owl-carousel owl-carousel-1">
+          <div class="products__card">
+            <div class="products__pricetag">
+              <p class="products__price products__price--after bold">24H 8€</p>
+              <p class="products__price products__price--before bold line-through">24H 10€</p>
             </div>
-            <div class="products__card products__card--2">
-              <div class="products__pricetag">
-                <p class="products__price bold">24H 14€</p>
-              </div>
+            <div class="products__content">
               <div class="products__imgbox">
-                <img class="img-fluid" src="/assets/images/tekstiilipesur.png" alt="">
-              </div>
-              <div class="products__cardtitle">
-                <h3>Kärcher tekstiilipesur</h3>
-              </div>
-              <div class="products__cardtext">
-                <p>Puhasta ise diivanid, autoistmed, vaibad ja madratsid.</p>
-              </div>
-              <button class="bttn products__btn">VAATA LÄHEMALT</button>
-            </div>
-            <div class="products__card products__card--3">
-              <div class="products__pricetag">
-                <p class="products__price bold">24H 10€</p>
-              </div>
-              <div class="products__imgbox">
-                <img class="img-fluid" src="/assets/images/survepesur.png" alt="">
-              </div>
-              <div class="products__cardtitle">
-                <h3>Kärcher survepesur</h3>
-              </div>
-              <div class="products__cardtext">
-                <p>Puhasta ise auto, maja fassaad, vundament, terrass, aed…</p>
-              </div>
-              <button class="bttn products__btn">VAATA LÄHEMALT</button>
-            </div>
-            <div class="products__card products__card--4">
-              <div class="products__pricetag">
-                <p class="products__price products__price--after bold">24H 8€</p>
-                <p class="products__price products__price--before bold line-through">24H 10€</p>
-              </div>
-              <div class="products__imgbox">
-                <img class="img-fluid" src="/assets/images/aurupesur.png" alt="">
-              </div>
-              <div class="products__cardtitle">
-                <h3>Kärcher aurupesur</h3>
-              </div>
-              <div class="products__cardtext">
-                <p>Puhasta lihtsalt ja kiirelt raskesti ligipääsetavad kohad.</p>
-              </div>
-              <button class="bttn products__btn">VAATA LÄHEMALT</button>
-            </div>
-            <div class="products__card products__card--5">
-              <div class="products__pricetag">
-                <p class="products__price bold">24H 14€</p>
-              </div>
-              <div class="products__imgbox">
-                <img class="img-fluid" src="/assets/images/tekstiilipesur.png" alt="">
-              </div>
-              <div class="products__cardtitle">
-                <h3>Kärcher tekstiilipesur</h3>
-              </div>
-              <div class="products__cardtext">
-                <p>Puhasta ise diivanid, autoistmed, vaibad ja madratsid.</p>
-              </div>
-              <button class="bttn products__btn">VAATA LÄHEMALT</button>
-            </div>
-            <div class="products__card products__card--6">
-              <div class="products__pricetag">
-                <p class="products__price bold">24H 10€</p>
-              </div>
-              <div class="products__imgbox">
-                <img class="img-fluid" src="/assets/images/survepesur.png" alt="">
-              </div>
-              <div class="products__cardtitle">
-                <h3>Kärcher survepesur</h3>
-              </div>
-              <div class="products__cardtext">
-                <p>Puhasta ise auto, maja fassaad, vundament, terrass, aed…</p>
-              </div>
-              <button class="bttn products__btn">VAATA LÄHEMALT</button>
-            </div>            
-          </div>
-          <div class="controls">
-            <span class="arrow left">
-              <img src="/assets/images/previous.svg" alt="" />
-            </span>
-            <span class="arrow right">
-              <img src="/assets/images/next.svg" alt="" />
-            </span>
-          </div> 
-        </div>               
-      </div>
-      <!-- <div class="section products__trailer">
-        <h2 class="products__title">Haagissaunad</h2>
-        <div class="carousel--t">
-          <div class="slider--t">
-            <div class="products__card--t d-flex flex-column justify-content-between">
-              <div class="products__pricetag">
-                <p class="products__price bold">24H 10€</p>
-              </div>
-              <div class="products__imgbox">
-                <img class="img-fluid" src="/assets/images/aurupesur.png" alt="">
-              </div>
-              <div class="products__cardtitle">
-                <h3>Kärcher aurupesur</h3>
-              </div>
-              <div class="products__cardtext">
-                <p>Puhasta lihtsalt ja kiirelt raskesti ligipääsetavad kohad.</p>
-              </div>
-              <button class="bttn products__btn">VAATA LÄHEMALT</button>
-            </div>
-            <div class="products__card--t d-flex flex-column justify-content-between">
-              <div class="products__pricetag">
-                <p class="products__price products__price--after bold">24H 90€</p>
-                <p class="products__price products__price--before bold line-through">24H 110€</p>
-              </div>
-              <div class="products__imgbox">
-                <img class="img-fluid" src="/assets/images/aurupesur.png" alt="">
-              </div>
-              <div class="products__cardtitle">
-                <h3>Kärcher aurupesur</h3>
-              </div>
-              <div class="products__cardtext">
-                <p>Puhasta lihtsalt ja kiirelt raskesti ligipääsetavad kohad.</p>
-              </div>
-              <button class="bttn products__btn">VAATA LÄHEMALT</button>
-            </div>
-            <div class="products__card--t d-flex flex-column justify-content-between">
-              <div class="products__pricetag">
-                <p class="products__price bold">24H 10€</p>
-              </div>
-              <div class="products__imgbox">
-                <img class="img-fluid" src="/assets/images/aurupesur.png" alt="">
-              </div>
-              <div class="products__cardtitle">
-                <h3>Kärcher aurupesur</h3>
-              </div>
-              <div class="products__cardtext">
-                <p>Puhasta lihtsalt ja kiirelt raskesti ligipääsetavad kohad.</p>
-              </div>
-              <button class="bttn products__btn">VAATA LÄHEMALT</button>
-            </div>
-            <div class="products__card--t d-flex flex-column justify-content-between">
-              <div class="products__pricetag">
-                <p class="products__price bold">24H 10€</p>
-              </div>
-              <div class="products__imgbox">
-                <img class="img-fluid" src="/assets/images/aurupesur.png" alt="">
+                <img class="img-fluid" src="/assets/images/aurupesur.svg" alt="">
               </div>
               <div class="products__cardtitle">
                 <h3>Kärcher aurupesur</h3>
@@ -251,17 +102,108 @@
               <button class="bttn products__btn">VAATA LÄHEMALT</button>
             </div>
           </div>
-          <div class="controls">
-            <span class="arrow left--t">
-              <img src="/assets/images/previous.svg" alt="" />
-            </span>
-            <span class="arrow right--t">
-              <img src="/assets/images/next.svg" alt="" />
-            </span>
+          <div class="products__card">
+            <div class="products__pricetag">
+              <p class="products__price bold">24H 14€</p>
+            </div>
+            <div class="products__content">
+              <div class="products__imgbox">
+                <img class="img-fluid" src="/assets/images/tekstiilipesur.svg" alt="">
+              </div>
+              <div class="products__cardtitle">
+                <h3>Kärcher tekstiilipesur</h3>
+              </div>
+              <div class="products__cardtext">
+                <p>Puhasta ise diivanid, autoistmed, vaibad ja madratsid.</p>
+              </div>
+              <button class="bttn products__btn">VAATA LÄHEMALT</button>
+            </div>
+          </div>
+          <div class="products__card">
+            <div class="products__pricetag">
+              <p class="products__price bold">24H 10€</p>
+            </div>
+            <div class="products__imgbox">
+              <img class="img-fluid" src="/assets/images/survepesur.svg" alt="">
+            </div>
+            <div class="products__cardtitle">
+              <h3>Kärcher survepesur</h3>
+            </div>
+            <div class="products__cardtext">
+              <p>Puhasta ise auto, maja fassaad, vundament, terrass, aed…</p>
+            </div>
+            <button class="bttn products__btn">VAATA LÄHEMALT</button>
           </div>
         </div>
-      </div> -->
-    </div>
+        <div class="controls-1"></div>
+      </div>
+    </div>   
+  </div>
+</section>
+
+<section class="products text-center">
+  <div class="container">
+    <div class="section products__trailer">
+      <h2 class="products__title">Haagissaunad</h2>
+      <div class="carousel__wrapper">
+        <div class="gradient1"></div>
+        <div class="gradient2"></div>
+        <div class="owl-carousel owl-carousel-2">
+          <div class="products__card">
+            <div class="products__pricetag">
+              <p class="products__price bold">24H 10€</p>
+            </div>
+            <div class="products__content">
+              <div class="products__imgbox">
+                <img class="img-fluid" src="/assets/images/aurupesur.svg" alt="">
+              </div>
+              <div class="products__cardtitle">
+                <h3>Kärcher aurupesur</h3>
+              </div>
+              <div class="products__cardtext">
+                <p>Puhasta lihtsalt ja kiirelt raskesti ligipääsetavad kohad.</p>
+              </div>
+              <button class="bttn products__btn">VAATA LÄHEMALT</button>
+            </div>
+          </div>
+          <div class="products__card">
+            <div class="products__pricetag">
+              <p class="products__price products__price--after bold">24H 90€</p>
+              <p class="products__price products__price--before bold line-through">24H 110€</p>
+            </div>
+            <div class="products__content">
+              <div class="products__imgbox">
+                <img class="img-fluid" src="/assets/images/aurupesur.svg" alt="">
+              </div>
+              <div class="products__cardtitle">
+                <h3>Kärcher aurupesur</h3>
+              </div>
+              <div class="products__cardtext">
+                <p>Puhasta lihtsalt ja kiirelt raskesti ligipääsetavad kohad.</p>
+              </div>
+              <button class="bttn products__btn">VAATA LÄHEMALT</button>
+            </div>
+          </div>
+          <div class="products__card">
+            <div class="products__pricetag">
+              <p class="products__price bold">24H 10€</p>
+            </div>
+            <div class="products__imgbox">
+              <img class="img-fluid" src="/assets/images/aurupesur.svg" alt="">
+            </div>
+            <div class="products__cardtitle">
+              <h3>Kärcher aurupesur</h3>
+            </div>
+            <div class="products__cardtext">
+              <p>Puhasta lihtsalt ja kiirelt raskesti ligipääsetavad kohad.</p>
+            </div>
+            <button class="bttn products__btn">VAATA LÄHEMALT</button>
+          </div>
+        </div>
+        <div class="controls-2"></div>
+      </div>
+    </div>   
+  </div>
 </section>
 
 <section class="section cta text-center d-flex justify-content-center align-items-center">
@@ -283,7 +225,7 @@
             <div class="footer__logo">
                 <img src="/assets/images/blurent logo.svg" alt="">
             </div>
-            <div class="footer__contacts">
+            <div class="footer__contactstext">
                 <span class="footer__text bold">rendi@blurent.ee</span>
                 <span class="footer__text bold">+372 51989361</span>
                 <span class="footer__text bold">Tapa, Jaama 1</span>

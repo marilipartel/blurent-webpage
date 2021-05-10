@@ -48,16 +48,16 @@
 
 .products {
   &__btn {
-    padding: 13px 30px;
+    padding: 13px 20px;
   }
 }
 
-.disabled {
+.bttn__disabled {
   border: 1px solid $lightgrey;
   color: $lightgrey;
 }
 
-.disabled:hover {
+.bttn__disabled:hover {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid $lightgrey;
   transform: none;
