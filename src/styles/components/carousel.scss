@@ -25,7 +25,7 @@
 .owl-prev,
 .owl-next {
   position: absolute;
-  top: 250px;
+  top: 30%;
   z-index: 10;
   border: none;
   background: none;
@@ -84,6 +84,7 @@
 .dots--img {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .owl-dot {
@@ -93,6 +94,7 @@
   background-size: cover;
   border-radius: 5px;
   border: 1px solid $darkgrey;
+  margin: 5px;
   &.active {
     border: 2px solid $green;
   }

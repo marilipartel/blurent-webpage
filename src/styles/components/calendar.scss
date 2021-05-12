@@ -1,12 +1,9 @@
-.ui-datepicker-calendar,
-.ui-datepicker-inline {
-  width: 100%;
-  border: none !important;
-}
-
 .ui-datepicker {
-  border: none;
-  background: url("/assets/images/calendar-bg.svg");
+  width: 100%;
+  max-width: 522px;
+  background: $beige;
+  border: none !important;
+  margin: 10px 0;
 }
 
 .ui-datepicker-header {

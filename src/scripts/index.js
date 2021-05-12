@@ -54,15 +54,14 @@ $(document).ready(function () {
 
 //////////////////////////////////////////CALENDAR//////////////////////////////////////////////////////
 
-$(".bttn__pickdate").click(function () {
-  $(".calendar").datepicker(
-    {
-      minDate: 1,
-    },
-    $.datepicker.regional["et"]
-  );
-});
+$(".bttn__pickdate").click(function () {});
 
+$(".bttn__pickdate").datepicker(
+  {
+    minDate: 1,
+  },
+  $.datepicker.regional["et"]
+);
 //////////////////////////////////////////TABBED COMPONENT////////////////////////////////////////////////
 
 $(".tabs").tabs();

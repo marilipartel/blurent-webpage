@@ -1,1 +1,45 @@
-
+@media (max-width: 540px) {
+  .hero {
+    &__title {
+      font-size: 40px;
+    }
+  }
+  .main {
+    margin-top: 30px;
+  }
+  .bttn {
+    width: 100%;
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .owl-dot {
+    width: 80px;
+    height: 80px;
+  }
+  .ui-tabs .ui-tabs-nav li {
+    float: none;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .discount {
+    &__card {
+      width: 90%;
+      justify-content: flex-start !important;
+    }
+    &__imgbox {
+      margin: 30px 0 20px 0;
+    }
+    &__footer {
+      align-items: center !important;
+      margin: 20px 0;
+      h3 {
+        font-size: 16px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

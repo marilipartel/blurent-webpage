@@ -56,7 +56,11 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-7">
-          <div class="carousel__wrapper">
+          <div class="main__heading--mobile d-lg-none text-center text-md-left">
+            <h2>Kärcher aurupesur</h2>
+              <h2>24H 10€</h2>
+          </div>
+          <div class="carousel__wrapper d-flex flex-column align-items-center">
             <div class="owl-carousel owl-carousel--img">
               <div class="imgC">
                 <img class="img-fluid" src="/assets/images/aurupesur.svg" alt="">
@@ -76,21 +80,22 @@
             </div>
             <div class="controls--img">
             </div>
-            <div class="dots--img">
-            </div>            
+            <div class="dots__wrapper d-flex justify-content-center">
+              <div class="dots--img">
+              </div>   
+            </div>         
           </div>
         </div>
         <div class="col-lg-5">
           <div class="main__content">
-              <h2>Kärcher aurupesur</h2>
-              <h2>24H 10€</h2>
+              <h2 class="d-none d-lg-block">Kärcher aurupesur</h2>
+              <h2 class="d-none d-lg-block">24H 10€</h2>
               <p>Puhasta lihtsalt ja kiirelt raskesti ligipääsetavad kohad.</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat fermentum tincidunt. Nam venenatis, est dictum varius lobortis, leo nibh ultricies metus, sit amet maximus turpis risus eu elit. Praesent nec lacus turpis.</p>
-              <div class="main__bttnbox d-flex justify-content-around">
+              <div class="main__bttnbox d-flex justify-content-left justify-content-lg-around">
                 <input class="bttn bttn__pickdate" type="button" id="bttn__pickdate" value="VALI KUUPÄEV">
                 <button class="bttn bttn__book bttn__disabled">BRONEERI</button>
               </div>
-              <div class="calendar"></div>
           </div>
         </div>
       </div>
@@ -110,7 +115,7 @@
           <p>Suspendisse eros lectus, maximus eleifend quam non, congue sollicitudin ipsum. Integer mollis mi non orci hendrerit faucibus. Aliquam erat volutpat. Donec non urna vel nibh hendrerit tincidunt ac sed leo. Duis elementum eget ligula non accumsan. Vestibulum arcu ligula, tincidunt non luctus aliquet, maximus ut dolor. Nulla cursus commodo enim. Nam dapibus sagittis urna, at tincidunt neque sollicitudin vel. Vivamus justo felis, ornare et sollicitudin vel, ullamcorper ac ex. Proin feugiat dignissim lorem, eu congue libero tempor nec. Pellentesque ac lobortis diam. Sed pretium augue et commodo tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id est at ante dignissim laoreet in vitae tellus. Proin dapibus mi leo, in efficitur tellus vehicula pharetra. </p>
         </div>
         <div id="product__content--3">
-          <video width="720px" height="405px" controls>
+          <video width="100%" height="auto" controls>
             <source src=" " type=video/mp4>
           </video>
         </div>
@@ -148,7 +153,7 @@
             <p class="products__price products__price--after bold">24H 12€</p>
             <p class="products__price products__price--before bold line-through">24H 14€</p>
           </div>
-          <div class="products__imgbox">
+          <div class="products__imgbox discount__imgbox">
             <img class="img-fluid" src="/assets/images/tekstiilipesur.svg" alt="">
           </div>
           <div class="discount__textbox">

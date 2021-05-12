@@ -1,6 +1,15 @@
+@media (max-width: 1200px) {
+  .bttn {
+    font-size: 20px;
+    margin: 0 5px;
+  }
+  .dots--img {
+    justify-content: flex-start;
+  }
+}
+
 @media (max-width: 1000px) {
   .hero {
-    margin-bottom: 100px;
     height: auto;
     &__content {
       height: auto;
@@ -8,24 +17,45 @@
     &__imgbox {
       justify-content: center;
       height: auto;
+      margin: 50px 0;
+    }
+    &__title {
+      font-size: 48px;
+      margin-top: 55px;
     }
   }
   .owl-carousel-1,
   .owl-carousel-2 {
     padding: 20px 50px;
   }
+  .owl-carousel-1 .owl-dots,
+  .owl-carousel-2 .owl-dots {
+    display: none;
+  }
   .products {
     &__card {
       height: auto;
     }
     &__title {
-      margin-top: 0;
+      margin-top: 70px;
+    }
+  }
+  .discount {
+    &__container {
+      width: 90%;
+    }
+    &__plus {
+      margin: 0 30px;
+    }
+    &__content {
+      justify-content: center;
     }
   }
   .cta {
     height: auto;
     &__content {
       width: 50%;
+      margin: 50px 0;
     }
     &__textbox {
       text-align: center;
@@ -34,12 +64,30 @@
 }
 
 @media (max-width: 720px) {
+  .gradient1,
+  .gradient2 {
+    display: none;
+  }
+  .discount {
+    &__content {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__plus {
+      margin: 30px 0 50px 0;
+    }
+    &__card {
+      width: 70%;
+    }
+  }
   .cta {
     &__content {
       width: 70%;
     }
   }
   .footer {
+    height: auto;
+    margin: 30px 0;
     &__contactstext {
       display: flex;
       flex-direction: column;
